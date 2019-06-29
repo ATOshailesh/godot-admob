@@ -17,6 +17,12 @@
     rootController = [AppDelegate getViewController];
 }
 
+- (void)setInstanceId:(int)instance_id {
+    NSLog(@"GodotAdmob AdmobInterstitial set instance id");
+    initialized = true;
+    instanceId = instance_id;
+}
+
 - (void) loadInterstitial:(NSString*)interstitialId {
     
     NSLog(@"Calling loadInterstitial");
