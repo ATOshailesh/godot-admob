@@ -16,6 +16,12 @@
     rootController = [AppDelegate getViewController];
 }
 
+- (void)initializeID:(int)instance_id {
+    NSLog(@"GodotAdmob set instance id");
+    initialized = true;
+    instanceId = instance_id;
+}
+
 - (void) loadBanner:(NSString*)bannerId: (BOOL)is_on_top {
     NSLog(@"Calling loadBanner");
     
