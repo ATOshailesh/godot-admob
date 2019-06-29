@@ -10,6 +10,7 @@
 }
 
 - (void)initialize:(BOOL)is_real: (int)instance_id;
+- (void)setInstanceId:(int)instance_id;
 - (void)loadInterstitial:(NSString*)interstitialId;
 - (void)showInterstitial;
 
