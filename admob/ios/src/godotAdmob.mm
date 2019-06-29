@@ -22,6 +22,7 @@ void GodotAdmob::init(bool isReal, int instanceId) {
     if (initialized) {
         NSLog(@"GodotAdmob Module already initialized");
         [banner initializeID :instanceId];
+        [interstitial setInstanceId:instanceId];
         [banner showBanner];
         return;
     }
